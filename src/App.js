@@ -24,8 +24,16 @@ const App = () => {
   };
   const submitData = () => {
     console.log(getData);
-    setTitle(null);
-    setAnswerType(null);
+    setTitle("")
+    setAnswerType('')
+    setInputList({
+      Answer: "",
+      Max: "",
+      Min: "",
+      Rows: "",
+    });
+    document.getElementById("title").value = "";
+    document.getElementById("select").value = "";
   };
 
   return (
@@ -35,6 +43,7 @@ const App = () => {
           <h1>Add Question</h1>
 
           <input
+            id="title"
             placeholder="Question Type"
             className="Ques"
             type="text"
@@ -55,7 +64,6 @@ const App = () => {
           <button className="btn" onClick={submitData}>
             Submit
           </button>
-          {answerType}
         </div>
       </div>
     </GlobalInfo.Provider>
