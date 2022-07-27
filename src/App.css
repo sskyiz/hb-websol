@@ -16,7 +16,9 @@
 .Question input {
     height: 35px;
     margin-bottom: 2rem;
+    outline: none;
 }
+
 .Ques{
     background-color: rgba(204, 227, 159, 0.571);
     color: rgb(91, 91, 91);
@@ -30,6 +32,7 @@
     margin-bottom: 2rem;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
 .btn{
     background-color: rgb(91, 128, 15);
